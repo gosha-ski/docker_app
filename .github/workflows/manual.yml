@@ -31,5 +31,5 @@ jobs:
       - name: Send greeting
         run: echo "Hello ${{ secrets.TEST_SECRET }}"
 
-      - name: ls command12
+      - name: ls command123
         run: ls
