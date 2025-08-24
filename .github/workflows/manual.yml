@@ -29,4 +29,7 @@ jobs:
     steps:
       # Runs a single command using the runners shell
       - name: Send greeting
-        run: echo "Hello ${{ secrets.TEST_SECRET }}"
+      run: echo "Hello ${{ secrets.TEST_SECRET }}"
+
+      - name: ls command
+      run: ls
