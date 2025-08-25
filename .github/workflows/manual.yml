@@ -35,6 +35,5 @@ jobs:
           username: ${{ secrets.USER }}
           password: ${{ secrets.PASSWORD }}
           script: |
-            mkdir nodeAppTest
             cd nodeAppTest
-            touch index.js
+            cd docker_app
