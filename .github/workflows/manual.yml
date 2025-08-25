@@ -37,3 +37,9 @@ jobs:
           script: |
             cd nodeAppTest
             cd docker_app
+            git pull
+            docker kill app_container
+            docker rm app_container
+            docker rmi remote:v1
+            docker build -t remote:v1 .
+            docker  run -p 8080:8080 --name app_container -d remote:v1
