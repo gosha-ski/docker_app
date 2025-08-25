@@ -35,4 +35,6 @@ jobs:
           username: ${{ secrets.USER }}
           password: ${{ secrets.PASSWORD }}
           script: |
-            echo Hello, world!
+            mkdir nodeAppTest
+            cd nodeAppTest
+            touch index.js
