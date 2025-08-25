@@ -34,4 +34,5 @@ jobs:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USER }}
           password: ${{ secrets.PASSWORD }}
-        command: echo Hello, world!
+          script: |
+            echo Hello, world!
